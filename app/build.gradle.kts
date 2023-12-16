@@ -16,7 +16,9 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildFeatures{
+        viewBinding=true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -34,7 +36,6 @@ android {
         jvmTarget = "1.8"
     }
 }
-
 dependencies {
 
     implementation("androidx.core:core-ktx:1.12.0")
